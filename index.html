@@ -40,14 +40,18 @@
     }
     .ar-link {
       position: absolute;
-      bottom: 16px;
-      right: 16px;
+      bottom: 15px;
+      right: 15px;
       padding: 10px 16px;
       background: rgba(0, 0, 0, 0.7);
       color: white;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+
+      display: inline-block; /* Butonun içeriğine göre boyutlanmasını sağlar */
+      z-index: 1000;         /* En önde görünmesini sağlar */
+      box-sizing: border-box; /* Padding'in genişliğe dahil olmasını sağlar */
     }
   </style>
 </head>
